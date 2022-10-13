@@ -314,3 +314,40 @@ img {
     }
   }
 }
+
+// width 968px
+@media screen and (min-width: 968px) {
+  .header {
+    &__container {
+      position: relative;
+    }
+
+    &__list {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      gap: 2rem;
+    }
+  }
+
+  .home {
+    &__container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    &__data {
+      text-align: left;
+    }
+
+    &__title,
+    &__text,
+    &__img {
+      width: auto;
+    }
+
+    &__buttons {
+      justify-content: left;
+    }
+  }
+}

@@ -251,3 +251,19 @@ img {
     }
   }
 }
+
+// ===== MEDIA QUERIES =====
+// width 480px
+@media screen and (min-width: 480px) {
+  .home {
+    &__text {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    &__buttons {
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+    }
+  }
+}

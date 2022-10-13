@@ -344,10 +344,26 @@ img {
     &__text,
     &__img {
       width: auto;
+      margin: 0;
     }
 
     &__buttons {
       justify-content: left;
+    }
+  }
+}
+
+// width 1120px
+@media screen and (min-width: 1120px) {
+  .home {
+    padding-top: 10rem;
+
+    &__title {
+      font-size: 48px;
+    }
+
+    &__text {
+      width: 480px;
     }
   }
 }

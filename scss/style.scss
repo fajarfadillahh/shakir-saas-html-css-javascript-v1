@@ -256,6 +256,7 @@ img {
 // width 480px
 @media screen and (min-width: 480px) {
   .home {
+    &__title,
     &__text {
       width: 400px;
       margin: 0 auto;
@@ -264,6 +265,25 @@ img {
     &__buttons {
       grid-template-columns: repeat(2, max-content);
       justify-content: center;
+    }
+  }
+}
+
+// width 640px
+@media screen and (min-width: 640px) {
+  .home {
+    &__title,
+    &__text,
+    &__img {
+      width: 460px;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__img {
+      width: 500px;
     }
   }
 }

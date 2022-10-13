@@ -50,7 +50,19 @@
 }
 
 html {
+  height: 100%;
   scroll-behavior: smooth;
+  background-color: var(--container-color);
+
+  // dark mode
+  &.dark {
+    --container-color: #0a090c;
+    --title-color: #ffffff;
+
+    .header__menu {
+      background-color: #221f27;
+    }
+  }
 }
 
 body {
@@ -110,7 +122,7 @@ img {
   background-color: var(--blue-color);
   font-size: 15px;
   font-weight: var(--font-semibold);
-  color: var(--container-color);
+  color: #fff;
   border-radius: 10rem;
 }
 
@@ -247,7 +259,7 @@ img {
       padding: 0.5rem;
       background-color: var(--green-color);
       border-radius: 50%;
-      color: var(--container-color);
+      color: #fff;
     }
   }
 }
@@ -290,6 +302,13 @@ img {
 
 // width 767px
 @media screen and (min-width: 767px) {
+  // dark mode
+  html.dark {
+    .header__menu {
+      background: transparent;
+    }
+  }
+
   .header {
     &__menu {
       display: flex;
